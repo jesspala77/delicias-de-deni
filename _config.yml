@@ -1,0 +1,14 @@
+title: Delicias de Deni
+description: Comida y postres cubanos caseros en Miami
+theme: jekyll-theme-minimal
+markdown: kramdown
+permalink: /:title
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: all
+  blanklines: false
+  profile: false
+  ignore:
+    envs: development

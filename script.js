@@ -36,7 +36,7 @@ if ('IntersectionObserver' in window) {
     });
   }, { threshold: 0.12 });
 
-  document.querySelectorAll('.favorites, .photo-section, .contact-band').forEach(el => {
+  document.querySelectorAll('.favorites, .maker-section, .photo-section, .contact-band').forEach(el => {
     animationObserver.observe(el);
   });
 }
@@ -67,5 +67,3 @@ if (header) {
     header.classList.toggle('scrolled', scrollTop > 80);
   });
 }
-
-console.log('Delicias de Deni website ready.');

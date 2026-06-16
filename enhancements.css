@@ -7,6 +7,7 @@
 .price-card,
 .perfect-card,
 .favorite-grid,
+.maker-section,
 .photo-card,
 .contact-band {
   transform: translateZ(0);
@@ -17,12 +18,14 @@
 }
 
 .favorites,
+.maker-section,
 .photo-section,
 .contact-band {
   opacity: .98;
 }
 
 .favorites.animate-in,
+.maker-section.animate-in,
 .photo-section.animate-in,
 .contact-band.animate-in {
   opacity: 1;
@@ -30,13 +33,15 @@
 
 .header-cta,
 .contact-band a,
+.maker-link,
 .favorite-card,
 .photo-card {
   transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
 }
 
 .header-cta:hover,
-.contact-band a:hover {
+.contact-band a:hover,
+.maker-link:hover {
   transform: translateY(-2px);
   filter: brightness(1.04);
 }

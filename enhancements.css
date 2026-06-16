@@ -1,2 +1,81 @@
-/* Premium conversion layer: authenticity + ordering */
-.hero{position:relative;overflow:hidden}.hero::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,247,239,.98) 0%,rgba(255,247,239,.9) 45%,rgba(255,247,239,.15) 100%);z-index:0}.hero>*{position:relative;z-index:1}.hero-photo{min-height:460px;border-radius:34px;background:linear-gradient(135deg,rgba(43,27,22,.1),rgba(217,79,115,.16)),url('assets/real-salad-trays.jpg');background-size:cover;background-position:center;box-shadow:0 25px 80px rgba(107,63,42,.22);border:10px solid #fff}.photo-panel{background:transparent!important;box-shadow:none!important;border:0!important;min-height:460px!important}.photo-panel .caption{position:absolute;left:22px;bottom:22px;right:22px;background:rgba(255,255,255,.92)!important;border:1px solid rgba(217,79,115,.2);border-radius:22px}.limited-strip{margin-top:18px;background:#fff;border:2px dashed #d94f73;border-radius:18px;padding:14px 18px;color:#6b3f2a;font-weight:900;display:inline-flex;gap:10px;align-items:center}.real-note{margin-top:18px;color:#6b3f2a;font-size:15px;font-weight:800}.brand-logo{width:68px;height:68px;border-radius:50%;object-fit:cover;box-shadow:0 10px 28px rgba(107,63,42,.2);background:#fff;border:3px solid #f7d7df}.logo-fallback{display:none}.offer-pop{position:fixed;right:22px;bottom:116px;z-index:70;background:#fff7ef;border:2px solid #d94f73;border-radius:24px;box-shadow:0 22px 70px rgba(43,27,22,.22);max-width:340px;padding:20px;transform:translateY(25px);opacity:0;pointer-events:none;transition:.35s ease}.offer-pop.show{opacity:1;transform:translateY(0);pointer-events:auto}.offer-pop button{position:absolute;right:10px;top:8px;border:0;background:transparent;font-size:24px;cursor:pointer;color:#6b3f2a}.offer-pop h3{margin:0 28px 8px 0;color:#d94f73}.offer-pop p{margin:0 0 14px}.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.review{background:#fff;border:1px solid #f3cbd5;border-radius:22px;padding:24px;box-shadow:0 12px 35px rgba(107,63,42,.1)}.review strong{color:#d94f73}.review p{font-size:18px;color:#3a241b}.order-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.step{background:linear-gradient(135deg,#fff,#fff7ef);border-radius:22px;padding:24px;text-align:center;box-shadow:0 12px 35px rgba(107,63,42,.1);border:1px solid #f3cbd5}.step span{display:inline-grid;place-items:center;width:50px;height:50px;border-radius:50%;background:#d94f73;color:white;font-weight:900;margin-bottom:12px}.gallery .g1{background-image:url('assets/real-salad-trays.jpg')!important}.gallery .g2{background-image:url('assets/real-prep.jpg')!important}.gallery .g3{background-image:url('assets/packaged-cup.jpg')!important;background-size:cover!important;background-position:center!important;color:transparent!important}.gallery .g4,.gallery .g5,.gallery .g6{background:linear-gradient(135deg,#ffe8ee,#fff7ef)!important;display:grid!important;place-items:center!important;color:#6b3f2a!important;font-size:24px!important;text-align:center!important;font-weight:900!important}.gallery .g4::before{content:"Arroz Imperial"}.gallery .g5::before{content:"Flan Casero"}.gallery .g6::before{content:"Natillas"}.menu-upsell{margin-top:18px;padding:14px;border-radius:16px;background:#fff7ef;color:#6b3f2a;font-weight:800}.cta-band{position:relative;overflow:hidden}.cta-band::after{content:"";position:absolute;right:-60px;top:-60px;width:190px;height:190px;border-radius:50%;background:rgba(255,255,255,.08)}.contact a{color:inherit;text-decoration:underline}.microcopy{font-size:14px!important;opacity:.9}@media(max-width:900px){.hero-photo{min-height:360px}.photo-panel{min-height:360px!important}.review-grid,.order-steps{grid-template-columns:1fr}.offer-pop{left:16px;right:16px;bottom:140px;max-width:none}.brand-logo{width:56px;height:56px}.limited-strip{display:flex}}
+:focus-visible {
+  outline: 3px solid rgba(223, 85, 120, .75);
+  outline-offset: 4px;
+}
+
+.site-header,
+.price-card,
+.perfect-card,
+.favorite-grid,
+.photo-card,
+.contact-band {
+  transform: translateZ(0);
+}
+
+.site-header.scrolled {
+  box-shadow: var(--shadow-md);
+}
+
+.favorites,
+.photo-section,
+.contact-band {
+  opacity: .98;
+}
+
+.favorites.animate-in,
+.photo-section.animate-in,
+.contact-band.animate-in {
+  opacity: 1;
+}
+
+.header-cta,
+.contact-band a,
+.favorite-card,
+.photo-card {
+  transition: transform .22s ease, box-shadow .22s ease, filter .22s ease;
+}
+
+.header-cta:hover,
+.contact-band a:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.04);
+}
+
+.favorite-card:hover,
+.photo-card:hover {
+  transform: translateY(-5px);
+}
+
+.poster-hero .hero-copy,
+.price-card,
+.perfect-card {
+  animation: riseIn .7s ease both;
+}
+
+.price-card {
+  animation-delay: .08s;
+}
+
+.perfect-card {
+  animation-delay: .16s;
+}
+
+@keyframes riseIn {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .poster-hero .hero-copy,
+  .price-card,
+  .perfect-card {
+    animation: none;
+  }
+}

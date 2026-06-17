@@ -26,6 +26,9 @@
 <link rel="canonical" href="https://deliciasdedeni.com">
 <link rel="preload" as="image" href="assets/real-prep.jpg">
 <link rel="preload" as="image" href="assets/logo.jpeg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
 
 <link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="enhancements.css">
@@ -70,7 +73,7 @@
 <main>
   <section id="inicio" class="poster-hero" aria-label="Delicias de Deni hecha con amor">
     <div class="hero-copy">
-      <h1><span>Hecha con Amor</span></h1>
+      <h1 aria-label="Hecha con Amor"><span>Hecha con Amor <span class="hero-heart" aria-hidden="true">&hearts;</span></span></h1>
       <p class="headline-bottom">Para los tuyos</p>
       <p class="paint-ribbon">Fresca, cremosa y llena de<br>sabor cubano</p>
     </div>
@@ -105,34 +108,44 @@
     <div class="favorites-title">Tambi&eacute;n prueba nuestros favoritos</div>
     <div class="favorite-grid">
       <article class="favorite-card salad">
-        <div class="favorite-photo"></div>
+        <img class="favorite-photo" src="assets/finished-trays-ensalada-fria.jpg" alt="Bandejas terminadas de ensalada fr&iacute;a cubana" loading="lazy" decoding="async">
         <h3>Ensalada Fr&iacute;a Cubana</h3>
         <p>Fresca, cremosa y lista para compartir</p>
       </article>
       <article class="favorite-card lasagna">
-        <div class="favorite-photo"></div>
+        <img class="favorite-photo" src="assets/lasagna.jpg" alt="Lasa&ntilde;a casera de Delicias de Deni" loading="lazy" decoding="async">
         <h3>Lasa&ntilde;a Casera</h3>
         <p>Hecha con amor y buenos ingredientes</p>
       </article>
       <article class="favorite-card imperial">
-        <div class="favorite-photo"></div>
+        <img class="favorite-photo" src="assets/arroz-imperial.jpg" alt="Arroz imperial casero" loading="lazy" decoding="async">
         <h3>Arroz Imperial</h3>
         <p>Tradicional, sabroso y perfecto para fiestas</p>
       </article>
       <article class="favorite-card rice">
-        <div class="favorite-photo"></div>
+        <img class="favorite-photo" src="assets/arroz-con-leche.jpg" alt="Arroz con leche con canela" loading="lazy" decoding="async">
         <h3>Arroz con Leche</h3>
         <p>Cremoso y dulce como en casa</p>
       </article>
       <article class="favorite-card flan">
-        <div class="favorite-photo"></div>
+        <img class="favorite-photo" src="assets/flan.jpg" alt="Flan casero con caramelo" loading="lazy" decoding="async">
         <h3>Flan Casero</h3>
         <p>Suave, cremoso y delicioso</p>
       </article>
       <article class="favorite-card natilla">
-        <div class="favorite-photo"></div>
+        <img class="favorite-photo" src="assets/natillas.jpg" alt="Natillas caseras con canela" loading="lazy" decoding="async">
         <h3>Natillas Caseras</h3>
         <p>Tradici&oacute;n que conquista corazones</p>
+      </article>
+      <article class="favorite-card dulce">
+        <img class="favorite-photo" src="assets/dulce-de-leche.jpg" alt="Dulce de leche cremoso" loading="lazy" decoding="async">
+        <h3>Dulce de Leche</h3>
+        <p>Cremoso, suave y bien casero</p>
+      </article>
+      <article class="favorite-card bread">
+        <img class="favorite-photo" src="assets/bread-pudding-raisins.jpg" alt="Pud&iacute;n de pan con pasas" loading="lazy" decoding="async">
+        <h3>Pud&iacute;n de Pan</h3>
+        <p>Dulce, especiado y lleno de sabor</p>
       </article>
     </div>
   </section>
@@ -158,13 +171,13 @@
     </div>
     <div class="photo-grid">
       <figure class="photo-card trays">
-        <figcaption>Bandejas listas</figcaption>
+        <figcaption>Bandejas terminadas</figcaption>
       </figure>
       <figure class="photo-card prep">
         <figcaption>Preparado fresco</figcaption>
       </figure>
       <figure class="photo-card party">
-        <figcaption>Listo para servir</figcaption>
+        <figcaption>Tama&ntilde;os disponibles</figcaption>
       </figure>
     </div>
   </section>
